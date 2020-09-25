@@ -28,48 +28,53 @@
             <ul>
                 <li><a class="menu" href="#hebergement">Hébergements</a></li>
                 <li><a class="menu" href="#activite">Activités</a></li>
-                
+
             </ul>
         </nav>
     </div>
 
 
-    <div class="recherche_ville">
+    <section class="recherche_ville">
         <h2 class="bolt">Trouvez votre hébergement pour des vacances de rêve</h2>
         <p>En plein centre ville ou en nature</p>
+
         <form class="recherche" action="#" method="POST">
             <i class="fas fa-map-marker-alt"></i>
             <label for="ville" class="font_position"></label>
             <input class="bolt" type="text" name="ville" id="ville">
             <input class="button_recherche" type="button" value="Rechercher">
         </form>
+
         <div class="filtre">
             <p class="bolt">Filtres</p>
-            <div class="but_filtre">
-                <i class="fas fa-money-bill-wave"></i>
-                <p class="bolt">Economique</p>
-            </div>
-            <div class="but_filtre">
-                <i class="fas fa-child"></i>
-                <p class="bolt">Familial</p>
-            </div>
-            <div class="but_filtre">
-                <i class="fas fa-heart"></i>
-                <p class="bolt">Romantique</p>
-            </div>
-            <div class="but_filtre">
-                <i class="fas fa-dog"></i>
-                <p class="bolt">Animaux autorisés</p>
-            </div>
-        </div>
-        
-        <p class="info_recherche"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
-    </div>
 
-    <section id="hebergement">
+            <div class="but_filtre">
+                <p class="bolt"><i class="fas fa-money-bill-wave"></i> Economique</p>
+            </div>
+
+            <div class="but_filtre">
+                <p class="bolt"><i class="fas fa-child"></i> Familial</p>
+            </div>
+
+            <div class="but_filtre">
+                <p class="bolt"><i class="fas fa-heart"></i> Romantique</p>
+            </div>
+
+            <div class="but_filtre">
+                <p class="bolt"><i class="fas fa-dog"></i> Animaux autorisés</p>
+            </div>
+
+        </div>
+
+        <p class="info_recherche"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville
+        </p>
+    </section>
+
+    <section class="hebergement">
         <article class="hebergement_ville">
-            <h2>Hébergement à Marseille</h2>
-            <a href="#">
+            <h2 class="titre_heber">Hébergement à Marseille</h2>
+            <!--<div class="cont_carte">-->
+            <a class="lien_carte" href="#">
                 <div class="carte">
                     <img src="" alt="auberge la cannebiére">
                     <h3>Auberge la cannebiére</h3>
@@ -77,7 +82,7 @@
                     <!--insert etoile ?-->
                 </div>
             </a>
-            <a href="#">
+            <a class="lien_carte" href="#">
                 <div class="carte">
                     <img src="" alt="hôtel du port">
                     <h3>Hôtel du port</h3>
@@ -85,7 +90,7 @@
                     <!--insert etoile ?-->
                 </div>
             </a>
-            <a href="#">
+            <a class="lien_carte" href="#">
                 <div class="carte">
                     <img src="" alt="hôtel Les mouettes">
                     <h3>Hôtel Les mouettes</h3>
@@ -93,7 +98,7 @@
                     <!--insert etoile ?-->
                 </div>
             </a>
-            <a href="#">
+            <a class="lien_carte" href="#">
                 <div class="carte">
                     <img src="" alt="hôtel de la mer">
                     <h3>Hôtel de la mer</h3>
@@ -101,7 +106,7 @@
                     <!--insert etoile ?-->
                 </div>
             </a>
-            <a href="#">
+            <a class="lien_carte" href="#">
                 <div class="carte">
                     <img src="" alt="auberge le panier">
                     <h3>Auberge Le Panier</h3>
@@ -109,7 +114,7 @@
                     <i class="fas fa-star"></i>
                 </div>
             </a>
-            <a href="#">
+            <a class="lien_carte" href="#">
                 <div class="carte">
                     <img src="" alt="hôtel chez Amina">
                     <h3>Hôtel chez Amina</h3>
@@ -117,12 +122,15 @@
                     <!--insert etoile ?-->
                 </div>
             </a>
-            <p>Afficher plus</p>
+            <!--</div>-->
+            <p class="aff_plus bolt"><a href="#">Afficher plus</a></p>
         </article>
 
         <aside class="plus_populaire">
-            <h2>Les plus populaire</h2>
-            <i class="fas fa-chart-line"></i>
+            <h2 class="titre_pluspop">Les plus populaire </h2>
+            <span class="right">
+                <a href="#"><i class="fas fa-chart-line"></i></a>
+            </span>
             <a href="#">
                 <div class="carte">
                     <img src="" alt="hôtel le soleil du matin">
@@ -150,9 +158,9 @@
         </aside>
     </section>
 
-    <section id="activite">
-        <h2>Activités à Marseille</h2>
-        
+    <section class="activite">
+        <h2 class="activite_ville">Activités à Marseille</h2>
+
         <div class="carte_act">
             <img src="" alt="vieux port">
             <h2>Vieux Port</h2>
@@ -187,7 +195,7 @@
 
     <footer>
         <div>
-            <p>A propos</p>
+            <p class="bolt">A propos</p>
             <a href="#">
                 <p>Fonctionnement du site</p>
             </a>
@@ -199,7 +207,7 @@
             </a>
         </div>
         <div>
-            <p>Nos hébergements</p>
+            <p class="bolt">Nos hébergements</p>
             <a href="#">
                 <p>Charte de qualité</p>
             </a>
@@ -208,7 +216,7 @@
             </a>
         </div>
         <div>
-            <p>Assistance</p>
+            <p class="bolt">Assistance</p>
             <a href="#">
                 <p>Centre d'aide</p>
             </a>

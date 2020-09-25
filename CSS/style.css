@@ -5,6 +5,9 @@
  body{
     font-family: 'Raleway';
 }
+.bolt{
+    font-weight: bold;
+}
 
 .inscription{
     color : #0065FC;
@@ -26,7 +29,7 @@ li{
     margin-left: 4em;
 }
 
-.menu{
+.menu, a {
     text-decoration: none;
     color: black;
 }
@@ -59,4 +62,95 @@ li:hover{
 }
 .elt_th3{
     order: 2;
+}
+
+.filtre{
+    display: flex;
+    width: 60%;
+}
+.but_filtre{
+    margin: auto;
+}
+
+.info_recherche{
+    font-size: 0.8em;
+}
+
+.hebergement{
+    display: flex;
+    justify-content: center;
+}
+
+.titre_heber{
+    width: 100%;
+}
+
+.hebergement_ville{
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+    padding: 1em;
+    border-radius: 10px;
+    background-color :#F2F2F2;
+    margin-right: 2em;
+}
+
+.plus_populaire{
+    padding: 1em;
+    border-radius: 10px;
+    background-color :#F2F2F2;
+}
+
+.titre_pluspop{
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: 90%;
+}
+
+.right{
+    display: inline-block;
+    position: relative;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+.lien_carte{
+    width: 30%;
+    height: 20%;
+    margin: 1em;
+}
+
+.carte{
+    border: black 1px solid;
+    margin: 1em;
+    background-color: white;
+    padding: 0.5em;
+
+}
+
+
+
+.aff_plus{
+    width: 100%;
+}
+
+.activite{
+    display: flex;
+    flex-wrap: wrap;
+}
+.activite_ville{
+    width: 100%;
+}
+
+.carte_act{
+    width: 20%;
+}
+
+
+footer{
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    background-color :#F2F2F2;
 }
