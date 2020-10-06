@@ -1,0 +1,114 @@
+@media screen and (max-width: 768px){
+    .header{
+        flex-flow:column wrap ;
+        position: relative;
+    }
+
+    .header_titre{
+    width: 90%;
+    }
+
+    .header_inscription{
+        flex: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .header_nav{
+        width: 100vw;
+    }
+
+    .header_nav ul{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 30px 0;
+    }
+    
+    .header_nav li{
+        width: 50vw;
+        margin: 0;
+    }
+
+    .header_nav .menu{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    li:hover{
+        border-top: none;
+    }
+
+    .menu:hover{
+        border-bottom:#0065FC solid 3px; ;
+    }
+
+    .filtre{
+        flex-wrap: wrap;
+    }
+
+    .filtre p{
+        width: 100%;
+        margin-bottom:20px;
+    }
+    .but_filtre{
+        margin: 10px 25px 10px 0;
+    }
+    .but_filtre p{
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    #hebergement{
+        flex-direction: column-reverse;
+    }
+
+    .plus_populaire{
+        margin: 0 0 25px ;
+    }
+
+    .hebergement_ville{
+        flex-direction: column;
+        margin: 0;
+        background-color: white;
+    }
+
+    .lien_carte{
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 2px 2px 2px 2px #F2F2F2 ;
+    }
+
+    #activite{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lien_activite{
+        width: 100%;
+        height: 300px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+    footer div{
+        margin: 15px 0 25px 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
