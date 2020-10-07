@@ -1,0 +1,40 @@
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .but_filtre {
+        margin-bottom: 15px;
+    }
+
+    #hebergement{
+        flex-direction: column-reverse;
+    }
+
+    .plus_populaire{
+        margin-bottom: 20px;
+    }
+
+    .hebergement_ville{
+        margin-right: 0;
+    }
+
+    #activite{
+        grid-template-columns: repeat(2,49%);
+        grid-template-rows: 40px repeat(4, 250px);
+        grid-auto-flow: row;
+    }
+
+    .titre_activite{
+        grid-column: span 2;
+    }
+    .act4{
+        grid-column: auto;
+    }
+    .act1, .act4{
+        grid-row: span 2;
+    }
+
+
+
+
+
+
+
+}
