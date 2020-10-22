@@ -7,10 +7,14 @@
 
 *{
     margin: 0;
+    box-sizing: border-box;
 }
  body{
     font-family: 'Raleway';
-    margin: 10px 15px;
+    margin: auto;
+    padding: 0 20px;
+    max-width: 1400px;
+    width: 100%;
 }
 
 .bolt, h3, h2{
@@ -21,49 +25,48 @@
 .inscription{
     color : #0065FC;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 16px;
 }
 
 #logo{
+    margin-top: 20px;
     width: 4em;
     height: 2em;
 }
 
 ul{
     list-style-type: none;
-    margin-top: 3em;
+    height: 100%;
 }
 
 li{ 
     display: inline;
-    margin-left: 4em;
+    height: 100%;
 }
 
 .menu{
-    font-size: 1.2em;
+    font-size:16px;
+    padding: 50px 30px 30px ;
+    width: 100%;
+    height: 100%;
 }
 
 .menu, a {
     text-decoration: none;
     color: black;
 }
-ul , li {
-    margin-top: auto;
-    padding-top: 3em;
-}
+
 
 .menu:hover{
     color: #0065FC;
     font-weight: bold;
-}
-
-li:hover{
     border-top: #0065FC solid 3px;
 }
 
 .header{
     display: flex;
     margin-bottom: 30px;
+    padding: 0 20px;
     align-items: baseline;
 }
 
@@ -81,45 +84,48 @@ li:hover{
 }
 
 /*  section Recherche  */
-
+.recherche_ville{
+    padding: 0 20px;
+}
 .recherche{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center ;
     margin: 30px 0;
 }
 
 .recherche_ville h2{
-    font-size: 1.8em;
+    font-size: 20px;
 }
 
-.recherche i{
+.icone_position{
     background-color:  #F2F2F2 ;
     border-radius: 15px 0px 0px 15px;
     border: #F2F2F2 solid 2px;
-    width: 60px;
-    height: 40px;
     font-size: 1.2em;
     text-align: center;
-    padding-top: 13px;
+    padding: 14px;
 }
 
 .input_recherche{
     border: #F2F2F2 solid 2px;
-    width: 250px;
+    padding: 14px;
     height: 50px;
-    font-size: 1.2em;
-    padding-left: 10px;
+    font-size: 16px;
+    min-width: 200px;
+}
+
+.but_mobile{
+    display: none;
 }
 
 .button_recherche{
     background-color: #0065FC;
     border: 1px #0065FC solid ;
     border-radius: 0 15px 15px 0;
-    padding: 0 20px;
+    padding: 12px;
     height: 50px;
-    font-size: 1.2em;
+    font-size: 16px;
     color: white;
 }
 
@@ -128,11 +134,13 @@ li:hover{
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: baseline;
-    margin: 15px;
-} 
+    margin: 15px 0;
+}
+.but_filtre{
+    margin: 10px 40px;
+}
 
 .but_filtre p{
-    margin: 0 40px;
     border: 4px #F2F2F2 solid;
     border-left: transparent;
     border-radius: 30px;
@@ -141,25 +149,34 @@ li:hover{
 .but_filtre p:hover{
     box-shadow: 5px 5px 5px  #0065FC;
     color:  #0065FC;
+    font-size: 16px;
 }
     /* couleur et couleur de fond des font Awesome */
 .color_b{
     color:#0065FC;
     background-color:  #DEEBFF;
-    border-radius: 30px;
-    padding: 19px;
+    border-radius: 56px;
+    padding: 20px;
+    margin-right: 10px;
+}
+.fa-child{
+    padding-left: 23px;
+    padding-right: 23px;
+}
+.fa-money-bill-wave{
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
 .info_recherche{
-    font-size: 0.8em;
+    font-size: 16px;
 }
 .info_recherche i{
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    padding: 5px 9px;
     color: #0065FC;
     border-radius: 15px;
-    border:3px #F2F2F2 solid;
+    border:2px #F2F2F2 solid;
     text-align: center;
  }
 
@@ -167,16 +184,17 @@ li:hover{
 
 #hebergement{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
+    height: auto;
     margin: 30px 0;
-    padding: 15px 0;
-    
+    padding: 0 20px;  
 }
 
 .hebergement_ville{
     display: flex;
     flex: 5;
     flex-flow: row wrap;
+    height: 100%;
     padding: 20px;
     border-radius: 20px;
     background-color :#F2F2F2;
@@ -187,29 +205,46 @@ li:hover{
 
 .titre_heber{
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .lien_carte{
     width: 30%;
-    margin: 10px 10px 10px 10px;
+    height: 35%;
+    margin: 5px;
 
 }
 
 .carte{
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: white;
-    padding: 10px;
-    height: 300px;
+    padding: 5px;
+    height: 200px;
+}
+.carte h3{
+    font-size: 14px;
+    padding-left: 10px;
+}
+/*nuit par prix*/
+.carte p:nth-child(3){
+    font-size: 12px;
+    padding-left: 10px;
 
 }
-
+.carte i{
+    font-size: 12px;
+}
+.note{
+    padding-left: 10px; 
+}
 .conteneur_image{
     width: 100%;
-    height: 70%;    
+    height: 60%;    
     margin-bottom: 15px;
 }
 .image{
+    object-fit: cover;
     height: 100%;
     width: 100%;
     border-radius: 15px 15px 0 0;
@@ -217,7 +252,7 @@ li:hover{
 
 
 .aff_plus{
-    margin: 30px 0;
+    margin: 20px 0;
     width: 100%;
     font-size: 1.2em;
 }
@@ -233,100 +268,137 @@ li:hover{
 
 .plus_populaire{
     display: flex;
-    flex: 1.5;
+    height: auto;
+    flex: 2;
     flex-direction: column;
-    padding: 30px;
+    padding: 15px;
     border-radius: 20px;
     background-color :#F2F2F2;
 }
 
+.plus_pop_box-titre{
+    display: flex;
+}
+
 .titre_pluspop{
-    display: inline-block;
-    text-align: left;
-    width: 90%;
-    margin-bottom: 50px;
+    flex: 1;
+    margin-bottom: 30px;
+    font-size: 18px;
 }
 
 
 .icon_pop_right{
-    font-size: 1.5em;
+    font-size: 18px;
 }
 
 .lien_carte_pop{
     width: 100%;
-    margin: auto;
+    height: 125px;
+    margin-bottom: 20px;
 }
 
 .carte_pop{
-    border-radius: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    border-radius: 20px;
     background-color: white;
-    padding: 10px;
-    margin-bottom: 30px;
-    height: 150px;
+    padding: 5px;
+    height: 100%;
+}
+.carte_pop h3{
+    padding-top: 10px;
+    font-size: 16px;
+}
+.carte_pop p{
+    font-size: 12px;
+}
+.carte_pop i{
+    font-size: 12px;
 }
 
 .conteneur_image_pop{
-    width: 40%;
+    width: 38%;
     height: 100%;
-    float: left;
     margin-right: 15px;
 }
 .image_pop{
+    object-fit: cover;
     height: 100%;
     width: 100%;
     border-radius: 15px 0 0 15px  ;
 }
 .note_pop{
-    margin-top: 60px;
+    margin-top: auto;
 }
 
 /*   section activite   */
-
 #activite{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 24%);
-    grid-template-rows: 40px 250px 250px;
-    grid-auto-flow: column ;
-    gap: 20px;
+    height: 400px;
+    margin-bottom: 80px;
+    padding: 0 20px;
+}
+.carte_activite{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: space-between;
     margin-bottom: 60px;
 }
 
 .titre_activite{
-    grid-column: span 4;
-    margin-left: 10px;
+    margin: 20px;
 }
 
 .lien_activite{
-    margin: 10px ;
-    height: 100%;
-    border-radius: 30px;
+    position: relative;
+    width: 23%;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 2px 2px 2px 1px #F2F2F2 ;
+    box-shadow: 2px 2px 2px 2px #F2F2F2 ;
 }
-
-.lien_activite h3{
-    height: 30px;
-    padding-left: 20px;
-    padding-top: 5px;
+.carte_activite{
+    height: 100%;
 }
-
 .conteneur_image_activite{
-    height: 90%; 
+    height: 100%;
 }
-
+.carte_activite h3{
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    background-color: #ffffff;
+    padding: 10px 10px 10px 25px ;
+    width: 100%;
+    height: 40px;
+}
 .image_activite{
+    object-fit: cover;
     height: 100%;
     width: 100%;
 }
-
-
-.act1, .act4{
-    grid-row: 2 / 4;
+.lien_activite:nth-child(1){
+    height: 400px;
 }
-.act4{
-    grid-column: 3;
+.lien_activite:nth-child(2){
+    height: 220px;
 }
+.lien_activite:nth-child(3){
+    height: 150px;
+}
+
+.lien_activite:nth-child(4){
+    height: 400px;
+}
+.lien_activite:nth-child(5){
+    height: 160px;
+}
+.lien_activite:nth-child(6){
+    height: 200px;
+}
+
 
 
 /*   section footer   */
@@ -335,11 +407,11 @@ footer{
     padding: 15px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     background-color :#F2F2F2;
 }
 footer div{
-    margin: auto;
-    font-size: 1.3em;
-    line-height: 1.5em;
+    margin-right: auto;
+    padding:10px;
+    font-size: 14px;
+    line-height: 1.8em;
 }

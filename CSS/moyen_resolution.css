@@ -1,40 +1,27 @@
-@media screen and (min-width: 769px) and (max-width: 1024px){
-    .but_filtre {
-        margin-bottom: 15px;
-    }
-
+@media screen and (min-width: 601px) and (max-width: 1023px){
+    
     #hebergement{
-        flex-direction: column-reverse;
+        height: auto;
+        flex-direction:  column-reverse;
     }
 
     .plus_populaire{
         margin-bottom: 20px;
+        flex: 1;
+        padding: 30px;
     }
-
+  
     .hebergement_ville{
-        margin-right: 0;
+        width: 100%;
     }
-
     #activite{
-        grid-template-columns: repeat(2,49%);
-        grid-template-rows: 40px repeat(4, 250px);
-        grid-auto-flow: row;
+        height: 800px;
     }
-
-    .titre_activite{
-        grid-column: span 2;
+    .carte_activite{
+        align-content: space-around;
     }
-    .act4{
-        grid-column: auto;
+    .lien_activite{
+        max-width: 350px;
+        width: 48%;
     }
-    .act1, .act4{
-        grid-row: span 2;
-    }
-
-
-
-
-
-
-
 }
