@@ -364,6 +364,7 @@ li{
 }
 .conteneur_image_activite{
     height: 100%;
+    width: 100%;
 }
 .carte_activite h3{
     position: absolute;
